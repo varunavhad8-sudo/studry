@@ -68,14 +68,13 @@ export const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Dashboard / Video Preview Mockup (Classic SaaS Hero) */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.4 }}
         className="relative z-10 w-full max-w-5xl mx-auto mt-20"
       >
-        <div className="rounded-2xl border border-border bg-white shadow-2xl overflow-hidden aspect-video flex flex-col">
+        <div className="rounded-2xl border border-border bg-white shadow-2xl overflow-hidden flex flex-col h-[460px] md:h-auto md:aspect-video">
           {/* Mock Browser Bar */}
           <div className="h-10 border-b border-border bg-muted flex items-center px-4 gap-2">
             <div className="flex gap-1.5">
@@ -130,7 +129,7 @@ export const Hero = () => {
                    <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12 group-hover:translate-x-[200%] transition-transform duration-1000 ease-in-out pointer-events-none z-30" />
                    
                    {/* Top Metrics */}
-                   <div className="flex gap-4">
+                   <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                       {/* Metric 1 */}
                       <div className="flex-1 bg-white/5 border border-white/10 shadow-sm rounded-xl flex flex-col justify-between p-4 md:p-5 relative overflow-hidden">
                          <div className="absolute top-0 right-0 w-16 h-16 bg-emerald-500/10 rounded-bl-full" />
@@ -158,7 +157,7 @@ export const Hero = () => {
                    </div>
                    
                    {/* Dynamic Main Chart Area */}
-                   <div className="flex-1 bg-black/40 rounded-xl border border-white/5 p-5 flex items-end gap-2 md:gap-3 relative overflow-hidden">
+                   <div className="flex-1 min-h-[120px] bg-black/40 rounded-xl border border-white/5 p-3 md:p-5 flex items-end gap-1.5 md:gap-3 relative overflow-hidden">
                       {/* Grid Lines */}
                       <div className="absolute inset-0 flex flex-col justify-between py-6 pointer-events-none">
                          <div className="w-full h-px bg-white/5" />
@@ -186,7 +185,7 @@ export const Hero = () => {
 
                    {/* Floating Toast Notification */}
                    <motion.div 
-                     className="absolute bottom-6 right-6 bg-[#18181b] border border-white/10 px-5 py-4 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] flex items-center gap-4 z-40"
+                     className="absolute bottom-4 right-4 md:bottom-6 md:right-6 bg-[#18181b] border border-white/10 px-4 py-3 md:px-5 md:py-4 rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.5)] hidden sm:flex items-center gap-4 z-40"
                      initial={{ x: 200, opacity: 0 }}
                      animate={{ x: 0, opacity: 1 }}
                      transition={{ duration: 0.8, delay: 2.2, type: "spring", stiffness: 150, damping: 15 }}

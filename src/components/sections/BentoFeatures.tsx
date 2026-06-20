@@ -134,17 +134,17 @@ export const BentoFeatures = () => {
                 Drop in your competitors and let us engineer a performance marketing strategy that out-converts them. Launch paid ads across Meta, LinkedIn, and Google instantly.
               </p>
             </div>
-            <div className="flex-1 w-full h-56 md:h-72 rounded-xl bg-gradient-to-b from-muted/30 to-muted/10 border border-border/50 flex flex-col items-center justify-center overflow-hidden relative p-4 md:p-8">
+            <div className="flex-1 w-full h-56 md:h-72 rounded-xl bg-gradient-to-b from-muted/30 to-muted/10 border border-border/50 flex flex-col items-center justify-center overflow-hidden relative p-3 md:p-8">
                {/* Mock Search Result */}
-               <div className="w-full max-w-md flex flex-col gap-4 z-10 group-hover:-translate-y-2 transition-transform duration-500">
+               <div className="w-full max-w-md flex flex-col gap-3 md:gap-4 z-10 group-hover:-translate-y-2 transition-transform duration-500">
                  {/* Search Bar */}
-                 <div className="w-full h-14 bg-white border border-border rounded-full shadow-lg flex items-center px-5 gap-4">
-                   <div className="w-5 h-5 border-2 border-muted-foreground rounded-full" />
-                   <div className="w-40 h-2 bg-muted rounded-full" />
+                 <div className="w-full h-12 md:h-14 bg-white border border-border rounded-full shadow-lg flex items-center px-4 md:px-5 gap-3 md:gap-4">
+                   <div className="w-4 h-4 md:w-5 md:h-5 border-2 border-muted-foreground rounded-full" />
+                   <div className="w-32 md:w-40 h-2 bg-muted rounded-full" />
                  </div>
                  
                  {/* Top Result Card */}
-                 <div className="w-full bg-white border border-blue-500/30 rounded-2xl shadow-xl p-6 flex flex-col gap-4 relative overflow-hidden">
+                 <div className="w-full bg-white border border-blue-500/30 rounded-2xl shadow-xl p-4 md:p-6 flex flex-col gap-3 md:gap-4 relative overflow-hidden">
                    <div className="absolute top-0 left-0 w-full h-1 bg-blue-500" />
                    <div className="flex items-center justify-between">
                      <div className="flex items-center gap-3">
@@ -161,7 +161,7 @@ export const BentoFeatures = () => {
                        Rank #1
                      </div>
                    </div>
-                   <div className="w-56 h-4 bg-blue-500/20 rounded-md mt-1" />
+                   <div className="w-2/3 md:w-56 h-4 bg-blue-500/20 rounded-md mt-1" />
                    <div className="flex flex-col gap-2 mt-2">
                      <div className="w-full h-2 bg-muted rounded-full" />
                      <div className="w-4/5 h-2 bg-muted rounded-full" />
